@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+<body>
+	<div class="filter">
+		<button data-name="*">All</button>
+		<button data-name=".fruit">Fruit</button>
+		<button data-name=".bird">Bird</button>
+		<button data-name=".flower">Flower</button>
+	</div>
+	<div class="grid">
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item flower">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item flower">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item flower">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item flower">...</div>
+	  <div class="grid-item flower">...</div>
+	  <div class="grid-item flower">...</div>
+	  <div class="grid-item flower">...</div>
+	  <div class="grid-item flower">...</div>
+	  <div class="grid-item flower">...</div>
+	  <div class="grid-item flower">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item fruit">...</div>
+	  <div class="grid-item bird">...</div>
+	  <div class="grid-item bird">...</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$grid = $('.grid').isotope({
+			  itemSelector: '.grid-item',
+			  layoutMode: 'fitRows'
+			});
+			$('.filter button').on("click", function () {
+			  var value = $(this).attr('data-name');
+			    $grid.isotope({
+			      filter: value
+			    });
+			});
+		})
+	</script>
+</body>
+</html>
