@@ -1,5 +1,8 @@
 # brandzshop-on-laravel
- Ecommerce website based on Laravel PHP framework.
+ Ecommerce website based on Laravel PHP framework.  
+
+
+ ![Image](brandzshop.jpg)
  
  
  <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
